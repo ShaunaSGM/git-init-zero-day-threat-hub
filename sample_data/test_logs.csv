@@ -1,0 +1,5 @@
+timestamp,source_ip,destination_ip,domain_contacted,file_hash,event_type
+2024-01-15 10:23:45,192.168.1.105,45.142.212.0,malicious-c2.net,aabbccdd11223344556677889900aabbccdd11223344556677889900aabbccdd,suspicious_connection
+2024-01-15 10:24:12,192.168.1.110,10.0.0.5,log4shell-exploit.xyz,clean_hash,web_request
+2024-01-15 10:25:30,192.168.1.115,8.8.8.8,normal-domain.com,1111222233334444555566667777888899990000aaaaaabbbbbbccccccdddddd,dns_lookup
+2024-01-15 10:26:01,192.168.1.120,1.1.1.1,google.com,fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210,normal_traffic

@@ -1,0 +1,61 @@
+{
+  "advisories": [
+    {
+      "title": "Apache Log4j Remote Code Execution",
+      "cve_id": "CVE-2021-44228",
+      "threat_actor": "Scattered Spider",
+      "description": "Critical vulnerability in Apache Log4j library allowing unauthenticated remote code execution",
+      "severity": "Critical",
+      "indicators": [
+        {
+          "type": "IP_Address",
+          "value": "45.142.212.0",
+          "description": "Known C2 infrastructure"
+        },
+        {
+          "type": "Domain",
+          "value": "log4shell-exploit.xyz",
+          "description": "Exploitation domain"
+        },
+        {
+          "type": "SHA256",
+          "value": "aabbccdd11223344556677889900aabbccdd11223344556677889900aabbccdd",
+          "description": "Log4j dropper payload"
+        }
+      ]
+    },
+    {
+      "title": "MOVEit Transfer SQL Injection",
+      "cve_id": "CVE-2023-34362",
+      "threat_actor": "Cl0p",
+      "description": "Critical SQL injection vulnerability in MOVEit Transfer enabling data theft",
+      "severity": "Critical",
+      "indicators": [
+        {
+          "type": "IP_Address",
+          "value": "162.125.18.0",
+          "description": "Attack infrastructure"
+        },
+        {
+          "type": "Domain",
+          "value": "moveit-rce.com",
+          "description": "C2 Domain"
+        }
+      ]
+    },
+    {
+      "title": "Windows Zero-Day Privilege Escalation",
+      "cve_id": "CVE-2024-0001",
+      "threat_actor": "APT-28",
+      "description": "Unpatched Windows kernel vulnerability allowing privilege escalation",
+      "severity": "High",
+      "indicators": [
+        {
+          "type": "SHA256",
+          "value": "1111222233334444555566667777888899990000aaaaaabbbbbbccccccdddddd",
+          "description": "Exploit dropper"
+        }
+      ]
+    }
+  ]
+}
